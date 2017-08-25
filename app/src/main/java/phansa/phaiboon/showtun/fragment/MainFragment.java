@@ -1,5 +1,6 @@
 package phansa.phaiboon.showtun.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import phansa.phaiboon.showtun.R;
+import phansa.phaiboon.showtun.ServiceActivity;
 import phansa.phaiboon.showtun.manager.GetAllData;
 import phansa.phaiboon.showtun.manager.MyAlert;
 
@@ -112,9 +114,17 @@ public class MainFragment extends Fragment{
                 MyAlert myAlert = new MyAlert(getActivity());
                 myAlert.myDialog("User False", "Please Try Again User False");
             } else if (passwordString.equals(userStrings[3])) {
+
                 // Password True
                 Toast.makeText(getActivity(), "Welcome " + userStrings[1],
                         Toast.LENGTH_SHORT).show();
+
+                //Intent to Service
+                Intent intent = new Intent(getActivity(), ServiceActivity.class);
+                intent.putExtra("User", userStrings);
+                getActivity().startActivity(intent);
+                getActivity().finish();
+
             } else {
                 // Password False
                 MyAlert myAlert = new MyAlert(getActivity());
