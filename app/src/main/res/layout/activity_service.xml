@@ -55,6 +55,7 @@
 
             <!--Title-->
             <TextView
+                android:id="@+id/txtReadEbookDrawer"
                 android:textColor="@color/colorPrimaryLight"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
@@ -83,6 +84,7 @@
 
             <!--Title-->
             <TextView
+                android:id="@+id/txtShowLocationDrawer"
                 android:textColor="@color/colorPrimaryLight"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
@@ -110,6 +112,7 @@
 
             <!--Title-->
             <TextView
+                android:id="@+id/txtYoutubeDeawer"
                 android:textColor="@color/colorPrimaryLight"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
@@ -137,6 +140,7 @@
 
             <!--Title-->
             <TextView
+                android:id="@+id/txtSearchDrawer"
                 android:textColor="@color/colorPrimaryLight"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"

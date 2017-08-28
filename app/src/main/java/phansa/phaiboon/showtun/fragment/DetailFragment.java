@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import phansa.phaiboon.showtun.R;
 
@@ -46,6 +48,22 @@ public class DetailFragment extends Fragment{
 
     }   // onCreate
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        //Create WebView
+        createWebView();
 
 
+    }   // onActivityCreate
+
+    private void createWebView() {
+        WebView webView = getView().findViewById(R.id.detailWebView);
+        WebViewClient webViewClient = new WebViewClient();
+        webView.setWebViewClient(webViewClient);
+        webView.loadUrl("http://androidthai.in.th");
+        webView.getSettings().setJavaScriptEnabled(true);
+
+    }
 }   // Main Class
