@@ -4,4 +4,5 @@
     <dimen name="h2">18sp</dimen>
     <dimen name="icon">180dp</dimen>
     <dimen name="content">300dp</dimen>
+    <dimen name="icon2">120dp</dimen>
 </resources>
