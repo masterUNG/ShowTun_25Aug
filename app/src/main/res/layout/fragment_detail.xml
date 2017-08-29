@@ -4,10 +4,10 @@
     android:layout_height="match_parent">
 
     <!--Content-->
-    <WebView
-        android:id="@+id/detailWebView"
+    <com.github.barteksc.pdfviewer.PDFView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:id="@+id/myPDFViewer"/>
 
 
 </LinearLayout>
